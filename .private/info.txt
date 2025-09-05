@@ -1,0 +1,4 @@
+vite img
+    -With vite, you should put images and other stuff in public folder. 
+    -When you make use of them, forget the public keyword and just reference them like you were already inside public folder
+    -The reason is because when you npm run build, it builds it like that
