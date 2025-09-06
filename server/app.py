@@ -1,9 +1,8 @@
 import os
-from flask import Flask, jsonify, send_from_directory
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 app = Flask(__name__, static_folder='../client/dist')
-CORS(app)
 
 # since npm run build puts the react build into assets folder
 @app.route('/assets/<path:filename>')
@@ -16,6 +15,7 @@ def serve():
 
 @app.route('/api', methods=['GET'])
 def api():
+    text = request.args.get("text", "undefined")
     return jsonify({"message": "Hello from Flask!"})
 
 if __name__ == '__main__':
