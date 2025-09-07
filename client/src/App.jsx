@@ -19,7 +19,10 @@ function App() {
 				</a>
 			</div>
 			</div>
-				<h1 id="title">TEXT EMOTION ANALYZER</h1>
+				<div id='title-container'>
+					<h1 id="title">TEXT EMOTION ANALYZER</h1>
+					<img id='logo' src='img/favicon.png'></img>
+				</div>
 				<center>
 					<textarea id="text-input" placeholder="Type something..."></textarea>
 				</center>
