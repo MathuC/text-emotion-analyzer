@@ -3,10 +3,9 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__, static_folder='../client/dist')
 
-# since npm run build puts the react build into assets folder
-@app.route('/assets/<path:filename>')
-def serve_static(filename):
-    return app.send_static_file(f'assets/{filename}')
+@app.route('/<path:filename>')
+def serve_all(filename):
+    return app.send_static_file(filename)
 
 @app.route('/')
 def serve():

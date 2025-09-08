@@ -57,13 +57,13 @@ body {
 	width: 40px;
 	vertical-align: -5px;
 	margin-left: 5px;
+	margin-top: -30px;
 }
 
 #text-input {
 	font-size: 16px;
 	font-family: Arial;
-	width: 90%;   
-	max-width: 90%;
+	width: 95%;
 	padding: 5px;
 	height: 200px;
 }
